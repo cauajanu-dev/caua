@@ -22,11 +22,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Fix Jest permissions
+      - name: Give execute permissions to jest
         run: chmod +x ./node_modules/.bin/jest  # Dá permissão de execução ao Jest
 
       - name: Run API Test 01 with Coverage
-        run: npx jest --coverage 01swapi.spec.js
+        run: npx jest --coverage --testTimeout=10000 01swapi.spec.js
 
   test_api_02:
     runs-on: ubuntu-latest
@@ -42,10 +42,168 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Fix Jest permissions
+      - name: Give execute permissions to jest
         run: chmod +x ./node_modules/.bin/jest  # Dá permissão de execução ao Jest
 
       - name: Run API Test 02 with Coverage
-        run: npx jest --coverage 02swapi.spec.js
+        run: npx jest --coverage --testTimeout=10000 02swapi.spec.js
 
-  # Continue o mesmo padrão para os outros jobs
+  test_api_03:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Give execute permissions to jest
+        run: chmod +x ./node_modules/.bin/jest  # Dá permissão de execução ao Jest
+
+      - name: Run API Test 03 with Coverage
+        run: npx jest --coverage --testTimeout=10000 03swapi.spec.js
+
+  test_api_04:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Give execute permissions to jest
+        run: chmod +x ./node_modules/.bin/jest  # Dá permissão de execução ao Jest
+
+      - name: Run API Test 04 with Coverage
+        run: npx jest --coverage --testTimeout=10000 04swapi.spec.js
+
+  test_api_05:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Give execute permissions to jest
+        run: chmod +x ./node_modules/.bin/jest  # Dá permissão de execução ao Jest
+
+      - name: Run API Test 05 with Coverage
+        run: npx jest --coverage --testTimeout=10000 05swapi.spec.js
+
+  test_api_06:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Give execute permissions to jest
+        run: chmod +x ./node_modules/.bin/jest  # Dá permissão de execução ao Jest
+
+      - name: Run API Test 06 with Coverage
+        run: npx jest --coverage --testTimeout=10000 06swapi.spec.js
+
+  test_api_07:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Give execute permissions to jest
+        run: chmod +x ./node_modules/.bin/jest  # Dá permissão de execução ao Jest
+
+      - name: Run API Test 07 with Coverage
+        run: npx jest --coverage --testTimeout=10000 07swapi.spec.js
+
+  test_api_08:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Give execute permissions to jest
+        run: chmod +x ./node_modules/.bin/jest  # Dá permissão de execução ao Jest
+
+      - name: Run API Test 08 with Coverage
+        run: npx jest --coverage --testTimeout=10000 08swapi.spec.js
+
+  test_api_09:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Give execute permissions to jest
+        run: chmod +x ./node_modules/.bin/jest  # Dá permissão de execução ao Jest
+
+      - name: Run API Test 09 with Coverage
+        run: npx jest --coverage --testTimeout=10000 09swapi.spec.js
+
+  test_api_10:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Give execute permissions to jest
+        run: chmod +x ./node_modules/.bin/jest  # Dá permissão de execução ao Jest
+
+      - name: Run API Test 10 with Coverage
+        run: npx jest --coverage --testTimeout=10000 10swapi.spec.js
