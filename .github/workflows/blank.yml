@@ -20,7 +20,9 @@ jobs:
           node-version: '16'
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          npm install
+          npx chmod +x ./node_modules/.bin/jest  # Garantir permissões de execução para Jest
 
       - name: Run API Test 01
         run: npx jest 01swapi.spec.js
@@ -37,7 +39,9 @@ jobs:
           node-version: '16'
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          npm install
+          npx chmod +x ./node_modules/.bin/jest  # Garantir permissões de execução para Jest
 
       - name: Run API Test 02
         run: npx jest 02swapi.spec.js
